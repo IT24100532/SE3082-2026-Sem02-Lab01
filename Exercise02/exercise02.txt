@@ -1,0 +1,15 @@
+Exercise 2: hostname and logical CPUs
+
+Compile and run (the lab sheet's "gcc exercise01 -otest.o" is missing the .c file name):
+  gcc exercise02.c -o test.o
+  ./test.o
+
+Output:
+Hello World, I am running on host se3082-lab01 with 8 logical cpus
+
+How many logical cores are there?
+8 logical cores.
+
+Note: this was run in a Debian Linux container (Docker) with gcc 14.2, not on the AWS
+lab instance. Run the same program on your EC2 instance and replace the output above.
+A t2.micro / t3.micro instance usually reports 1 or 2 logical cpus.
